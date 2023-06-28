@@ -2,10 +2,10 @@
 # class project
 
 _Live Site_: 🧑‍💻
-
 - [app-name-goes-here](https://paolojr90.github.io/AdvancedReact_project/)
 
-
+_Resources_: 📚
+- [Dark Mode in React](https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg)
 
 
 **Contributors** ⚡
