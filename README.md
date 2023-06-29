@@ -6,7 +6,7 @@ _Live Site_: 🧑‍💻
 
 _Resources_: 📚
 - [Dark Mode in React](https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg)
-
+- [React Icons](https://react-icons.github.io/react-icons)
 
 **Contributors** ⚡
 - [Yevhen Khreptun](https://github.com/khreptunyevhen)
