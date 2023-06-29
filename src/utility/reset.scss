@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 div,
@@ -121,4 +125,9 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
