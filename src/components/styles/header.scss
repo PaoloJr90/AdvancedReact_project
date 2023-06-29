@@ -1,0 +1,50 @@
+.header {
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 2.5rem;
+
+      @media (max-width: 640px) {
+        span {
+          display: none;
+        }
+      }
+    }
+
+    nav {
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    }
+
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      button {
+        cursor: pointer;
+        transition: transform ease-in 0.2s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    @media (max-width: 640px) {
+      nav {
+        display: none;
+      }
+    }
+  }
+}
