@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./styles/nav.scss";
+import "./styles/navItem.scss";
 
-function Nav({ url, title }) {
+function NavItem({ url, title }) {
   return (
     <li>
       <a href={url}>{title}</a>
@@ -10,4 +10,4 @@ function Nav({ url, title }) {
   );
 }
 
-export default Nav;
+export default NavItem;
