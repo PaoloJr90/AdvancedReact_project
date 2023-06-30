@@ -5,16 +5,34 @@ export const webSiteInfoDB = {
       link: "/aboutus",
     },
     {
-      title: "Test",
-      link: "/test",
+      title: "Shop",
+      link: "/shop",
+    },
+    {
+      title: "Blog",
+      link: "/blog",
+    },
+    {
+      title: "Contact Us",
+      link: "/contactus",
+    },
+  ],
+  footerNavigation: [
+    {
+      title: "About Us",
+      link: "/aboutus",
     },
     {
       title: "Shop",
       link: "/shop",
     },
     {
-      title: "Contacts",
-      link: "/contacts",
+      title: "Blog",
+      link: "/blog",
+    },
+    {
+      title: "Contact Us",
+      link: "/contactus",
     },
   ],
   mainSlider: [

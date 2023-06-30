@@ -1,10 +1,7 @@
 import React from "react";
 import { useImmer } from "use-immer";
-
-import Nav from "./NavItem";
-
+import NavItem from "./NavItem";
 import { webSiteInfoDB } from "../common/webSiteInfoDB.js";
-
 import "./styles/navBar.scss";
 
 function NavBar({ navMenu, mobileMenu }) {
@@ -21,7 +18,7 @@ function NavBar({ navMenu, mobileMenu }) {
       <ul>
         {menu.map((item, index) => {
           return (
-            <Nav
+            <NavItem
               key={`menu-list-${index}`}
               url={item.link}
               title={item.title}
