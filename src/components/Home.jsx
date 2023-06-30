@@ -15,7 +15,9 @@ const Home = () => {
           <MainSlider slides={mainSlider} />
         </div>
       </div>
-      <div className="container">Some info after slider</div>
+      <div className="container">
+        {/* TODO: products container with product cards */}
+      </div>
     </section>
   );
 };
