@@ -26,7 +26,7 @@ function Header() {
             <IoCartOutline size={20} className="button" />
           </button>
         </div>
-        <Hamburger />
+        <Hamburger mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
         <NavBar navMenu="mobile-menu" mobileMenu={mobileMenu} />
       </div>
     </header>

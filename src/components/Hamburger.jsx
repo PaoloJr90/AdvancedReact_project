@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-const Hamburger = () => {
-  const [mobileMenu, setMobileMenu] = useState(false);
-
+const Hamburger = ({ mobileMenu, setMobileMenu }) => {
   const handleMobileMenu = () => {
     setMobileMenu((prev) => {
       setMobileMenu(!prev);
