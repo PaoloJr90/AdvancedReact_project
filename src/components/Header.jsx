@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import NavBar from "./NavBar";
 import Hamburger from "./Hamburger";
 import { FaSistrix, FaRegHeart } from "react-icons/fa";
@@ -11,9 +13,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header-wrapper container">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           M<span className="hidden">iralou</span>
-        </a>
+        </Link>
         <NavBar navMenu="dekstop-menu" mobileMenu={mobileMenu} />
         <div className="nav-buttons">
           <button>

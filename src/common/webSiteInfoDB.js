@@ -6,7 +6,7 @@ export const webSiteInfoDB = {
     },
     {
       title: "Test",
-      link: "/",
+      link: "/test",
     },
     {
       title: "Shop",
@@ -15,6 +15,29 @@ export const webSiteInfoDB = {
     {
       title: "Contacts",
       link: "/contacts",
+    },
+  ],
+  mainSlider: [
+    {
+      title: "Choose your shoes with us.",
+      description:
+        "We will help you to choose the product that the suit you best. And we mean it.",
+      image: "../images/main-slider-shoe.png",
+      type: "shoes",
+    },
+    {
+      title: "Choose your shoes with us.",
+      description:
+        "We will help you to choose the product that the suit you best. And we mean it.",
+      image: "../images/main-slider-shoe.png",
+      type: "shoes",
+    },
+    {
+      title: "Choose your shoes with us.",
+      description:
+        "We will help you to choose the product that the suit you best. And we mean it.",
+      image: "../images/main-slider-shoe.png",
+      type: "shoes",
     },
   ],
 };
