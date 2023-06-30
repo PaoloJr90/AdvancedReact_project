@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AdvancedReact_project/static/css/main.5cbbbe5c.css",
+    "main.js": "/AdvancedReact_project/static/js/main.dfc0a263.js",
+    "static/media/main-bg.jpg": "/AdvancedReact_project/static/media/main-bg.aba8e3f708e6a8354243.jpg",
+    "static/media/main-slider-shoe.png": "/AdvancedReact_project/static/media/main-slider-shoe.b88409f947d891d0b60c.png",
+    "index.html": "/AdvancedReact_project/index.html",
+    "main.5cbbbe5c.css.map": "/AdvancedReact_project/static/css/main.5cbbbe5c.css.map",
+    "main.dfc0a263.js.map": "/AdvancedReact_project/static/js/main.dfc0a263.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cbbbe5c.css",
+    "static/js/main.dfc0a263.js"
+  ]
+}
