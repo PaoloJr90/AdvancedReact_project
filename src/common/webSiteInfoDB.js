@@ -1,16 +1,20 @@
 export const webSiteInfoDB = {
   headerNavigation: [
     {
-      title: "Home",
+      title: "About Us",
+      link: "/aboutus",
+    },
+    {
+      title: "Test",
       link: "/",
     },
     {
       title: "Shop",
-      link: "#shop",
+      link: "/shop",
     },
     {
       title: "Contacts",
-      link: "#contacts",
+      link: "/contacts",
     },
   ],
 };
