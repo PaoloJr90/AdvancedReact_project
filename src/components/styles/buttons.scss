@@ -15,4 +15,8 @@
   &:hover {
     transform: scale(1.05);
   }
+
+  &--black {
+    background-color: $dark-color;
+  }
 }
