@@ -10,11 +10,22 @@ import { products } from "./common/productsDB";
 
 const Main = () => {
   const [productsInfo, setProductsInfo] = useImmer(products);
+  const [addCartsList, setAddCartsList] = useImmer([]);
+  const [addWishlistsList, setWishlistList] = useImmer([]);
 
   return (
     <React.StrictMode>
       <BrowserRouter>
-        <ProductContext.Provider value={{ productsInfo, setProductsInfo }}>
+        <ProductContext.Provider
+          value={{
+            productsInfo,
+            setProductsInfo,
+            addCartsList,
+            setAddCartsList,
+            addWishlistsList,
+            setWishlistList,
+          }}
+        >
           <App />
         </ProductContext.Provider>
       </BrowserRouter>

@@ -8,7 +8,13 @@ import SectionHeader from "./SectionHeader";
 
 const ProductCard = () => {
   const { id } = useParams();
-  const { productsInfo } = useContext(ProductContext);
+  const {
+    productsInfo,
+    addCartsList,
+    setAddCartsList,
+    addWishlistsList,
+    setWishlistList,
+  } = useContext(ProductContext);
   let productWithId = null;
 
   const photosCount = [1, 2, 3, 4, 5, 6];
@@ -24,8 +30,6 @@ const ProductCard = () => {
   }
 
   const [card, setCard] = useImmer(productWithId);
-  const [addCartsList, setAddCartsList] = useState([]);
-  const [addWishlistsList, setWishlistList] = useState([]);
 
   useEffect(() => {
     const retriveProducts = JSON.parse(localStorage.getItem("add-to-cart"));

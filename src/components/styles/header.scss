@@ -31,9 +31,19 @@
       button {
         cursor: pointer;
         transition: transform ease-in 0.2s;
+        color: $dark-color;
 
         &:hover {
           transform: scale(1.1);
+        }
+
+        a {
+          color: $dark-color;
+
+          svg {
+            stroke: $dark-color;
+            fill: $dark-color;
+          }
         }
       }
     }
