@@ -14,9 +14,11 @@ const SmallProductCard = ({
       <div className="small-card-img">
         <img src={productImage} alt={`${productName} ${productModel}`} />
       </div>
-      <h3>{productName}</h3>
-      <p>{productModel}</p>
-      <p className="price">{productPrice}$</p>
+      <div className="description">
+        <h3>{productName}</h3>
+        <p>{productModel}</p>
+        <p className="price">{productPrice}$</p>
+      </div>
       <Link className="btn btn--black" to={"/product-card"}>
         Viev product
       </Link>

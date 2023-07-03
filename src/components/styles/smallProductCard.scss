@@ -1,6 +1,9 @@
 @import "../../utility/variables.scss";
 
 .small-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -19,20 +22,24 @@
     }
   }
 
-  h3 {
-    color: $gray-color;
-    margin-bottom: 10px;
-  }
+  .description {
+    flex: 1 1 auto;
 
-  p {
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
+    h3 {
+      color: $gray-color;
+      margin-bottom: 10px;
+    }
 
-  .price {
-    font-weight: 600;
-    color: $accent-color;
+    p {
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: 600;
+      color: $accent-color;
+    }
   }
 
   &:hover {

@@ -6,7 +6,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -22,7 +22,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -38,7 +38,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -54,7 +54,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -70,7 +70,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -86,7 +86,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -102,7 +102,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -118,7 +118,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -134,7 +134,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -150,7 +150,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -168,7 +168,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -184,7 +184,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -200,7 +200,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -216,7 +216,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -232,7 +232,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -248,7 +248,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -264,7 +264,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -280,7 +280,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -296,7 +296,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -312,7 +312,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -330,7 +330,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -346,7 +346,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -362,7 +362,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8, 8.5],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -378,7 +378,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -394,7 +394,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -410,7 +410,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -426,7 +426,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -442,7 +442,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -458,7 +458,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
@@ -474,7 +474,7 @@ export const products = {
       model: "Air Jordan 1 Mid",
       price: 120,
       sizes: [6, 6.5, 7, 7.5, 8],
-      image: "./public/assetsimages/product/jordan-shoe.jpg",
+      image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
       description: "lorem",
