@@ -30,6 +30,7 @@ const Home = () => {
               return (
                 <SmallProductCard
                   key={`product-card-${index}${id}`}
+                  productId={id}
                   productName={name}
                   productModel={model}
                   productPrice={price}

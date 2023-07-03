@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./styles/smallProductCard.scss";
 
 const SmallProductCard = ({
+  productId,
   productName,
   productModel,
   productImage,
@@ -19,7 +20,7 @@ const SmallProductCard = ({
         <p>{productModel}</p>
         <p className="price">{productPrice}$</p>
       </div>
-      <Link className="btn btn--black" to={"/product-card"}>
+      <Link className="btn btn--black" to={`/product-card/${productId}`}>
         Viev product
       </Link>
     </div>

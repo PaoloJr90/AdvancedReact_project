@@ -5,7 +5,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -21,7 +70,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -37,7 +135,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -53,7 +200,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -69,7 +265,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -85,7 +330,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -101,7 +395,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -117,7 +460,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -133,7 +525,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -149,7 +590,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -167,7 +657,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -183,7 +722,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -199,7 +787,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -215,7 +852,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -231,7 +917,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -247,7 +982,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -263,7 +1047,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -279,7 +1112,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -295,7 +1177,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -311,7 +1242,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -329,7 +1309,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -345,7 +1374,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -361,7 +1439,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8, 8.5],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -377,7 +1504,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -393,7 +1569,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -409,7 +1634,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -425,7 +1699,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -441,7 +1764,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -457,7 +1829,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
@@ -473,7 +1894,56 @@ export const products = {
       name: "Jordan",
       model: "Air Jordan 1 Mid",
       price: 120,
-      sizes: [6, 6.5, 7, 7.5, 8],
+      sizes: [
+        {
+          sizeShoe: 6,
+          inStock: true,
+        },
+        {
+          sizeShoe: 6.5,
+          inStock: false,
+        },
+        {
+          sizeShoe: 7,
+          inStock: true,
+        },
+        {
+          sizeShoe: 7.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8,
+          inStock: true,
+        },
+        {
+          sizeShoe: 8.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 9,
+          inStock: false,
+        },
+        {
+          sizeShoe: 9.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10,
+          inStock: true,
+        },
+        {
+          sizeShoe: 10.5,
+          inStock: true,
+        },
+        {
+          sizeShoe: 11,
+          inStock: false,
+        },
+        {
+          sizeShoe: 11.5,
+          inStock: true,
+        },
+      ],
       image: "AdvancedReact_project/images/product/jordan-shoe.jpg",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam dolormagnam, fugit harum corporis velit reprehenderit amet, iste omnis sit aliquid,debitis perspiciatis ipsam. Voluptatibus quo accusantium consequatur debitis?",
