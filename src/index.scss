@@ -12,6 +12,16 @@ body {
   font-family: "Roboto", sans-serif;
   color: $dark-color;
 
+  .webpage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+      flex: 1 1 auto;
+    }
+  }
+
   .container {
     max-width: 1140px;
     padding: 0 15px;

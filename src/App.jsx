@@ -11,20 +11,22 @@ import Wishlist from "./components/Wishlist";
 
 function App() {
   return (
-    <>
+    <div className="webpage">
       <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/contacts" element={<Contacts />} />
-        <Route path="/product-card/:id" element={<ProductCard />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/product-card/:id" element={<ProductCard />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+        </Routes>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
