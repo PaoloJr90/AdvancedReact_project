@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { useImmer } from "use-immer";
 import { useParams } from "react-router-dom";
 import ProductContext from "./ProductContext";
 
@@ -22,6 +23,38 @@ const ProductCard = () => {
     }
   }
 
+  const [card, setCard] = useImmer(productWithId);
+  const [addCartsList, setAddCartsList] = useState([]);
+  const [addWishlistsList, setWishlistList] = useState([]);
+
+  useEffect(() => {
+    const retriveProducts = JSON.parse(localStorage.getItem("add-to-cart"));
+    const retriveProductsWishlist = JSON.parse(
+      localStorage.getItem("add-to-wishlist")
+    );
+    if (retriveProducts) setAddCartsList(retriveProducts);
+    if (retriveProductsWishlist) setWishlistList(retriveProductsWishlist);
+  }, []);
+
+  useEffect(() => {
+    if (addCartsList?.length) {
+      // only store the state if cards exists and it's length is greater than 0
+      localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
+      localStorage.setItem("add-to-wishlist", JSON.stringify(addWishlistsList));
+    }
+  }, [addCartsList, addWishlistsList]);
+
+  const addCard = (theCard, cardsList, listState) => {
+    for (const card of cardsList) {
+      if (card.id === id) {
+        return;
+      }
+    }
+
+    const newCardsList = [...cardsList, theCard];
+    listState(newCardsList);
+  };
+
   return (
     <>
       <SectionHeader title="Shop" />
@@ -32,18 +65,18 @@ const ProductCard = () => {
               return (
                 <div key={`photo-product-${index}`} className="images-block">
                   <img
-                    src={`/${productWithId.image}`}
-                    alt={`${productWithId.name} ${productWithId.model}`}
+                    src={`/${card.image}`}
+                    alt={`${card.name} ${card.model}`}
                   />
                 </div>
               );
             })}
           </div>
           <div className="description">
-            <h2>{`${productWithId.name} ${productWithId.model}`}</h2>
-            <p className="price">${productWithId.price}</p>
+            <h2>{`${card.name} ${card.model}`}</h2>
+            <p className="price">${card.price}</p>
             <div className="sizes">
-              {productWithId.sizes.map((size, index) => {
+              {card.sizes.map((size, index) => {
                 return (
                   <div
                     className={size.inStock ? "size" : "size unavailable"}
@@ -56,8 +89,18 @@ const ProductCard = () => {
             </div>
             <p>{productWithId.about}</p>
             <div className="buttons">
-              <button className="btn">Add to card</button>
-              <button className="btn">Add to wishlist</button>
+              <button
+                className="btn"
+                onClick={() => addCard(card, addCartsList, setAddCartsList)}
+              >
+                Add to card
+              </button>
+              <button
+                className="btn"
+                onClick={() => addCard(card, addWishlistsList, setWishlistList)}
+              >
+                Add to wishlist
+              </button>
             </div>
             {/* TODO: Dropdown description and reviews */}
           </div>
