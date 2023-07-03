@@ -98,7 +98,7 @@ export const webSiteInfoDB = {
       title: "Our team",
       description:
         "Professionals that work with us",
-      image: "../images/main-slider-shoe.png",
+      image:  ["AdvancedReact_project/images/finder.png","AdvancedReact_project/images/ceo.png","AdvancedReact_project/images/designer.png","AdvancedReact_project/images/developer.png"],
       type: "shoes",
     },
   ],  
