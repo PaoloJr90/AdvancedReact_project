@@ -10,10 +10,7 @@ const Cart = () => {
   }, []);
 
   useEffect(() => {
-    if (addCartsList?.length) {
-      // only store the state if cards exists and it's length is greater than 0
-      localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
-    }
+    localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
   }, [addCartsList]);
 
   // const deleteCard = () => {
@@ -30,7 +27,10 @@ const Cart = () => {
             <button
               onClick={() => {
                 const newList = [...addCartsList];
+                console.log(addCartsList);
                 newList.splice(index, 1);
+                console.log(index);
+                console.log(newList);
 
                 setAddCartsList(newList);
               }}

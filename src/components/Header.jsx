@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import ProductContext from "./ProductContext";
 import { Link } from "react-router-dom";
 
 import NavBar from "./NavBar";
@@ -9,6 +10,8 @@ import "./styles/header.scss";
 
 function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const { addWishlistsList, setWishlistList } = useContext(ProductContext);
+  const { addCartsList, setAddCartsList } = useContext(ProductContext);
 
   return (
     <header className="header">
@@ -33,11 +36,19 @@ function Header() {
             />
           </Link>
           <Link to="/cart">
-            <IoCartOutline
-              size={20}
-              className="button"
-              style={{ color: "#0e0e0e" }}
-            />
+            {addCartsList.length > 0 ? (
+              <IoCartSharp
+                size={20}
+                className="button"
+                style={{ color: "#0e0e0e" }}
+              />
+            ) : (
+              <IoCartOutline
+                size={20}
+                className="button"
+                style={{ color: "#0e0e0e" }}
+              />
+            )}
           </Link>
         </div>
         <Hamburger mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />

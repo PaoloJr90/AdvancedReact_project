@@ -12,10 +12,7 @@ const Wishlist = () => {
   }, []);
 
   useEffect(() => {
-    if (addWishlistsList?.length) {
-      // only store the state if cards exists and it's length is greater than 0
-      localStorage.setItem("add-to-wishlist", JSON.stringify(addWishlistsList));
-    }
+    localStorage.setItem("add-to-wishlist", JSON.stringify(addWishlistsList));
   }, [addWishlistsList]);
 
   // const deleteCard = () => {
