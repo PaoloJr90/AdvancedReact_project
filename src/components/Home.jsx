@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { webSiteInfoDB } from "../common/webSiteInfoDB.js";
 
 import "./styles/home.scss";
+import Categories from "./Categories";
 
 const Home = () => {
   const { mainSlider, homePage } = webSiteInfoDB;
@@ -21,6 +22,7 @@ const Home = () => {
           <MainSlider slides={mainSlider} />
         </div>
       </section>
+      <Categories />
       <section className="prodacts">
         <div className="container">
           <h2 className="products-title">Our products</h2>

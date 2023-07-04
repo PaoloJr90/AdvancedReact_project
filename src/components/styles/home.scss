@@ -1,6 +1,8 @@
 @import "../../utility/variables.scss";
 
 .home {
+  position: relative;
+
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../../images/main-bg.jpg");
@@ -105,5 +107,15 @@
         gap: 40px;
       }
     }
+  }
+
+  &:after {
+    content: "";
+    border-bottom: 500px solid $dark-color;
+    border-left: 100vw solid transparent;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
   }
 }
