@@ -2,13 +2,14 @@ import React, { useContext } from "react";
 import MainSlider from "./MainSlider";
 import SmallProductCard from "./SmallProductCard";
 import ProductContext from "./ProductContext";
+import { Link } from "react-router-dom";
 
 import { webSiteInfoDB } from "../common/webSiteInfoDB.js";
 
 import "./styles/home.scss";
 
 const Home = () => {
-  const { mainSlider } = webSiteInfoDB;
+  const { mainSlider, homePage } = webSiteInfoDB;
 
   const { productsInfo } = useContext(ProductContext);
   const { men } = productsInfo;
@@ -27,6 +28,10 @@ const Home = () => {
             {men.map((product, index) => {
               const { name, model, image, price, id } = product;
 
+              if (index > 7) {
+                return;
+              }
+
               return (
                 <SmallProductCard
                   key={`product-card-${index}${id}`}
@@ -38,6 +43,18 @@ const Home = () => {
                 />
               );
             })}
+          </div>
+          <Link className="btn" to={"/shop"}>
+            Show more
+          </Link>
+          <div className="about-us">
+            <div className="images-block">
+              <img src={homePage.image} alt={homePage.title} />
+            </div>
+            <div className="about-us-description">
+              <h2>{homePage.title}</h2>
+              <p>{homePage.description}</p>
+            </div>
           </div>
         </div>
       </section>
