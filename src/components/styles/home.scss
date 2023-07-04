@@ -2,6 +2,11 @@
 
 .home {
   position: relative;
+  padding-bottom: 80px;
+
+  @media (max-width: 640px) {
+    padding-bottom: 0;
+  }
 
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -107,6 +112,10 @@
         gap: 40px;
       }
     }
+
+    @media (max-width: 640px) {
+      padding-bottom: 0;
+    }
   }
 
   &:after {
@@ -117,5 +126,10 @@
     position: absolute;
     bottom: 0;
     z-index: -1;
+
+    @media (max-width: 768px) {
+      border-bottom: 900px solid $dark-color;
+      border-left: 100vw solid transparent;
+    }
   }
 }

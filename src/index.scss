@@ -11,6 +11,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: $dark-color;
+  overflow-x: hidden;
 
   .webpage {
     display: flex;

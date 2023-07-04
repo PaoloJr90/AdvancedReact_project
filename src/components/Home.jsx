@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import MainSlider from "./MainSlider";
 import SmallProductCard from "./SmallProductCard";
 import ProductContext from "./ProductContext";
+import ReviewsSlider from "./ReviewsSlider";
 import { Link } from "react-router-dom";
 
 import { webSiteInfoDB } from "../common/webSiteInfoDB.js";
@@ -10,7 +11,7 @@ import "./styles/home.scss";
 import Categories from "./Categories";
 
 const Home = () => {
-  const { mainSlider, homePage } = webSiteInfoDB;
+  const { mainSlider, homePage, reviewsSlider } = webSiteInfoDB;
 
   const { productsInfo } = useContext(ProductContext);
   const { men } = productsInfo;
@@ -60,6 +61,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <ReviewsSlider slides={reviewsSlider} />
     </section>
   );
 };

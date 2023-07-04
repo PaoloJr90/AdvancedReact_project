@@ -58,6 +58,23 @@ export const webSiteInfoDB = {
       type: "shoes",
     },
   ],
+  reviewsSlider: [
+    {
+      author: "Andrew Peterson",
+      review:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione minima adipisci, quo commodi recusandae dolorum eligendi deserunt, sint suscipit id voluptate totam aliquam rem nostrum quia mollitia ipsum. Labore, quis!",
+    },
+    {
+      author: "Alex Maison",
+      review:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse architecto labore aspernatur? Eligendi illum nulla quibusdam asperiores cupiditate ex velit blanditiis, omnis animi. Assumenda optio odit facere exercitationem itaque?",
+    },
+    {
+      author: "Emilly Watson",
+      review:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, non cupiditate ad dolores nobis rem impedit adipisci pariatur nihil. Mollitia ipsum adipisci, corrupti impedit enim quidem laboriosam hic nobis nisi.",
+    },
+  ],
   aboutUs: [
     {
       title: "We are miralou",
