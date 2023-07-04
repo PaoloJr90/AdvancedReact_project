@@ -10,8 +10,8 @@ import "./styles/header.scss";
 
 function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const { addWishlistsList, setWishlistList } = useContext(ProductContext);
-  const { addCartsList, setAddCartsList } = useContext(ProductContext);
+  const { addWishlistsList } = useContext(ProductContext);
+  const { addCartsList } = useContext(ProductContext);
 
   return (
     <header className="header">
@@ -34,6 +34,7 @@ function Header() {
               className="button"
               style={{ color: "#0e0e0e" }}
             />
+            <span className="counter">{addWishlistsList.length}</span>
           </Link>
           <Link to="/cart">
             {addCartsList.length > 0 ? (
@@ -49,6 +50,7 @@ function Header() {
                 style={{ color: "#0e0e0e" }}
               />
             )}
+            <span className="counter">{addCartsList.length}</span>
           </Link>
         </div>
         <Hamburger mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />

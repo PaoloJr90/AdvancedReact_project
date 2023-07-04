@@ -46,6 +46,33 @@
           }
         }
       }
+
+      a {
+        position: relative;
+        text-decoration: none;
+
+        .counter {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          $size: 12px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: $size;
+          height: $size;
+          border-radius: $size;
+          border: 1px solid white;
+
+          text-align: center;
+          background-color: $accent-color;
+          font-size: 8px;
+          color: $ligth-color;
+          text-decoration: none;
+        }
+      }
     }
 
     .mobile-menu {

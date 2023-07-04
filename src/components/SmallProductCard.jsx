@@ -21,7 +21,7 @@ const SmallProductCard = ({
         <p className="price">{productPrice}$</p>
       </div>
       <Link className="btn btn--black" to={`/product-card/${productId}`}>
-        Viev product
+        View product
       </Link>
     </div>
   );
