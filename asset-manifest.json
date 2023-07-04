@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/AdvancedReact_project/static/css/main.5cbbbe5c.css",
-    "main.js": "/AdvancedReact_project/static/js/main.dfc0a263.js",
+    "main.css": "/AdvancedReact_project/static/css/main.287d2d37.css",
+    "main.js": "/AdvancedReact_project/static/js/main.332610e9.js",
     "static/media/main-bg.jpg": "/AdvancedReact_project/static/media/main-bg.aba8e3f708e6a8354243.jpg",
+    "static/media/about-bg.jpg": "/AdvancedReact_project/static/media/about-bg.82c8ad4b8fc15f19feda.jpg",
     "static/media/main-slider-shoe.png": "/AdvancedReact_project/static/media/main-slider-shoe.b88409f947d891d0b60c.png",
+    "static/media/category-men-bg.jpg": "/AdvancedReact_project/static/media/category-men-bg.552da1be0d7671c406be.jpg",
+    "static/media/category-women-bg.jpg": "/AdvancedReact_project/static/media/category-women-bg.060135e43fbd0a5bd13e.jpg",
+    "static/media/category-kids-bg.jpg": "/AdvancedReact_project/static/media/category-kids-bg.322a5da17b214b08f771.jpg",
+    "static/media/section-header-bg.jpg": "/AdvancedReact_project/static/media/section-header-bg.ec902c0f398ddc4853ea.jpg",
     "index.html": "/AdvancedReact_project/index.html",
-    "main.5cbbbe5c.css.map": "/AdvancedReact_project/static/css/main.5cbbbe5c.css.map",
-    "main.dfc0a263.js.map": "/AdvancedReact_project/static/js/main.dfc0a263.js.map"
+    "main.287d2d37.css.map": "/AdvancedReact_project/static/css/main.287d2d37.css.map",
+    "main.332610e9.js.map": "/AdvancedReact_project/static/js/main.332610e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cbbbe5c.css",
-    "static/js/main.dfc0a263.js"
+    "static/css/main.287d2d37.css",
+    "static/js/main.332610e9.js"
   ]
 }
