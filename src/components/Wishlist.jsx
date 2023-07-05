@@ -1,5 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import ProductContext from "./ProductContext";
+import SectionHeader from "./SectionHeader";
+import { Link } from "react-router-dom";
+
+import "./styles/wishlist.scss";
 
 const Wishlist = () => {
   const { addWishlistsList, setWishlistList } = useContext(ProductContext);
@@ -20,9 +24,22 @@ const Wishlist = () => {
   // };
   return (
     <>
-      <div>
+      <div className="wishlist">
+        <SectionHeader title="Wishlist" />
         {!addWishlistsList.length && (
-          <p>Looks like your wishlist is empty...</p>
+          <div className="empty">
+            <div className="container">
+              <h2>Looks like your wishlist is empty...</h2>
+              <p>
+                To see which products are in wishlist go to shop and click on
+                "Add to wishlist" button. For now there is no products added
+                into the wishlist.
+              </p>
+              <Link className="btn" to={"/shop"}>
+                Go to shop
+              </Link>
+            </div>
+          </div>
         )}
         {addWishlistsList.map((card, index) => {
           return (
