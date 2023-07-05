@@ -2,7 +2,7 @@
 # class project
 
 _Live Site_: 🧑‍💻
-- [e-Commerce Shoe Store](https://paolojr90.github.io/AdvancedReact_project/)
+- [e-Commerce - Clothing & Apparel Store](https://paolojr90.github.io/AdvancedReact_project/)
 
 _Resources_: 📚
 - [Dark Mode in React](https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg)
