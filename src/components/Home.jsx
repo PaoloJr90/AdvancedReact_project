@@ -5,9 +5,7 @@ import ProductContext from "./ProductContext";
 import ReviewsSlider from "./ReviewsSlider";
 import Gallery from "./Gallery";
 import { Link } from "react-router-dom";
-
 import { webSiteInfoDB } from "../common/webSiteInfoDB.js";
-
 import "./styles/home.scss";
 import Categories from "./Categories";
 

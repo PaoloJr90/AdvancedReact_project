@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-wrapper container">
-        <Link to="/" className="logo">
+        <Link to="/home" className="logo">
           M<span className="hidden">iralou</span>
         </Link>
         <NavBar navMenu="dekstop-menu" mobileMenu={mobileMenu} />

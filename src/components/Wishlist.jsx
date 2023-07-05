@@ -19,26 +19,30 @@ const Wishlist = () => {
   //   console.log("click");
   // };
   return (
-    <div>
-      {!addWishlistsList.length && <p>Looks like your wishlist is empty...</p>}
-      {addWishlistsList.map((card, index) => {
-        return (
-          <div key={`cart-card-${index}`}>
-            <p>Card with id: {card.id}</p>
-            <button
-              onClick={() => {
-                const newList = [...addWishlistsList];
-                newList.splice(index, 1);
+    <>
+      <div>
+        {!addWishlistsList.length && (
+          <p>Looks like your wishlist is empty...</p>
+        )}
+        {addWishlistsList.map((card, index) => {
+          return (
+            <div key={`cart-card-${index}`}>
+              <p>Card with id: {card.id}</p>
+              <button
+                onClick={() => {
+                  const newList = [...addWishlistsList];
+                  newList.splice(index, 1);
 
-                setWishlistList(newList);
-              }}
-            >
-              X
-            </button>
-          </div>
-        );
-      })}
-    </div>
+                  setWishlistList(newList);
+                }}
+              >
+                X
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 };
 

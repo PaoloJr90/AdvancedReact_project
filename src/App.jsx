@@ -3,11 +3,12 @@ import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import Shop from "./components/Shop";
 import AboutUs from "./components/AboutUs";
-import Contacts from "./components/ContactUs";
+import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
 import Cart from "./components/Cart";
 import Wishlist from "./components/Wishlist";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/product-card/:id" element={<ProductCard />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
