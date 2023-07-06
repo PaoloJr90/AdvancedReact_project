@@ -19,20 +19,30 @@ export const webSiteInfoDB = {
   ],
   footerNavigation: [
     {
-      title: "About Us",
+      title: "About Miralou",
       link: "/aboutus",
     },
     {
-      title: "Shop",
-      link: "/shop",
-    },
-    {
-      title: "Blog",
-      link: "/blog",
+      title: "FAQ",
+      link: "/faq",
     },
     {
       title: "Contact Us",
       link: "/contactus",
+    },
+  ],
+  footerNavigation1: [
+    {
+      title: "Wishlist",
+      link: "/wishlist",
+    },
+    {
+      title: "Checkout",
+      link: "/checkout",
+    },
+    {
+      title: "Cart",
+      link: "/cart",
     },
   ],
   mainSlider: [
