@@ -28,7 +28,7 @@ const Home = () => {
           <div className="container">
             <h2 className="products-title">Our products</h2>
             <div className="wrapper">
-              {men.map((product, index) => {
+              {men?.map((product, index) => {
                 const { name, model, image, price, id } = product;
 
                 if (index > 7) {
