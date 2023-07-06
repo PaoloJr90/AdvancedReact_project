@@ -1,11 +1,15 @@
 .footer {
   background-color: black;
   color: white;
-  display: block;
+  display: inline-block;
   width: auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
+
+  @media (max-width: 640px) {
+    display: block;
+  }
 
   .logo {
     font-family: "Playfair Display", serif;
@@ -15,34 +19,65 @@
     padding-bottom: 5px;
   }
 
-  @media (max-width: 640px) {
-    display: block;
-  }
-
-  .information {
+  .logos {
     color: white;
-    text-align: center;
-    margin: 5px;
-    justify-content: space-between;
+    font-size: 20px;
+    justify-content: left;
+    padding-right: 15px;
   }
 
-  .quick-links {
-    display: grid;
-    color: white;
-    text-align: center;
-    margin: 5px;
-    justify-content: space-between;
+  .paragraph {
+    width: 175px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
-  .copyright {
-    font-weight: bold;
-    float: left;
-  }
+  .info-links-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: red;
+    // font-size: bold;
 
-  .rights {
-    font-weight: bold;
-    float: right;
+    .information {
+      display: block;
+      color: white;
+      font-size: bold;
+      text-align: center;
+      margin: 5px;
+      justify-content: space-between;
+    }
+
+    .quick-links {
+      display: block;
+      font-size: bold;
+      text-align: center;
+      margin: 5px;
+      justify-content: space-between;
+    }
+
+    .contact-us {
+      display: block;
+      font-size: bold;
+      text-align: center;
+      margin: 5px;
+      justify-content: space-between;
+    }
   }
+}
+
+.copyright {
+  font-weight: bold;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.rights {
+  font-weight: bold;
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 hr {
