@@ -13,7 +13,7 @@ const Main = () => {
 
   useEffect(() => {
     (async () => {
-      const fetchData = await fetch(`/productDB.json`, {
+      const fetchData = await fetch(`/productsDB.json`, {
         method: "GET",
         headers: {
           Accept: "application/json",
