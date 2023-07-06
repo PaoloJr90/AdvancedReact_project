@@ -8,9 +8,9 @@ const Categories = () => {
   const { productsInfo } = useContext(ProductContext);
 
   const productCounts = {
-    men: productsInfo.men.length,
-    women: productsInfo.women.length,
-    kids: productsInfo.kids.length,
+    men: productsInfo.men?.length,
+    women: productsInfo.women?.length,
+    kids: productsInfo.kids?.length,
   };
 
   return (
