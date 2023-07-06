@@ -11,6 +11,13 @@ function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const { addWishlistsList, setWishlistList } = useContext(ProductContext);
   const { addCartsList, setAddCartsList } = useContext(ProductContext);
+  const { counts, setCounts } = useContext(ProductContext);
+
+  let cartCount = 0;
+  Object.values(counts).forEach((item) => {
+    cartCount += item;
+  });
+  console.log(cartCount);
 
   useEffect(() => {
     const retriveProducts = JSON.parse(localStorage.getItem("add-to-cart"));

@@ -8,7 +8,7 @@ import "./styles/cart.scss";
 
 const Cart = () => {
   const { addCartsList, setAddCartsList } = useContext(ProductContext);
-  const [counts, setCounts] = useImmer({});
+  const { counts, setCounts } = useContext(ProductContext);
   const [totalPrice, setTotalPrice] = useImmer("");
 
   useEffect(() => {
@@ -28,6 +28,7 @@ const Cart = () => {
     if (counts[productId] > 8) {
       return;
     }
+
     console.log(counts);
 
     setCounts((draft) => {
@@ -57,7 +58,6 @@ const Cart = () => {
     addCartsList.forEach((item) => {
       const productId = item.id;
       const quantity = counts[productId] || 1;
-      console.log(quantity);
 
       total += item.price * quantity;
     });
@@ -167,7 +167,7 @@ const Cart = () => {
                       <th>Shipping</th>
                     </tr>
                     <tr>
-                      <td>Tax: 20%</td>
+                      <td>Tax: 5%</td>
                     </tr>
                     <tr>
                       <td>Flat Rate: 15$</td>
@@ -179,7 +179,7 @@ const Cart = () => {
                   <thead>
                     <tr>
                       <th>
-                        Total <span>{totalPrice * 1.2 + 15}$</span>
+                        Total <span>{totalPrice * 1.05 + 15}$</span>
                       </th>
                     </tr>
                   </thead>
