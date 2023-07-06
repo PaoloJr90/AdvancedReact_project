@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import ProductContext from "./ProductContext";
 import { Link } from "react-router-dom";
 
@@ -10,8 +10,29 @@ import "./styles/header.scss";
 
 function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const { addWishlistsList } = useContext(ProductContext);
-  const { addCartsList } = useContext(ProductContext);
+  const { addWishlistsList, setWishlistList } = useContext(ProductContext);
+  const { addCartsList, setAddCartsList } = useContext(ProductContext);
+
+  useEffect(() => {
+    const retriveProducts = JSON.parse(localStorage.getItem("add-to-cart"));
+    const retriveProductsWishlist = JSON.parse(
+      localStorage.getItem("add-to-wishlist")
+    );
+    if (retriveProducts) setAddCartsList(retriveProducts);
+    if (retriveProductsWishlist) setWishlistList(retriveProductsWishlist);
+  }, []);
+
+  useEffect(() => {
+    if (addCartsList?.length) {
+      // only store the state if cards exists and it's length is greater than 0
+      localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
+    }
+
+    if (addWishlistsList?.length) {
+      // only store the state if cards exists and it's length is greater than 0
+      localStorage.setItem("add-to-wishlist", JSON.stringify(addWishlistsList));
+    }
+  }, [addCartsList, addWishlistsList]);
 
   return (
     <header className="header">

@@ -14,7 +14,9 @@ const Cart = () => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
+    if (addCartsList.length) {
+      localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
+    }
   }, [addCartsList]);
 
   // const deleteCard = (index) => {

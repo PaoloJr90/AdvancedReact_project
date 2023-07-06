@@ -16,7 +16,9 @@ const Wishlist = () => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("add-to-wishlist", JSON.stringify(addWishlistsList));
+    if (addWishlistsList.length) {
+      localStorage.setItem("add-to-wishlist", JSON.stringify(addWishlistsList));
+    }
   }, [addWishlistsList]);
 
   // const deleteCard = () => {

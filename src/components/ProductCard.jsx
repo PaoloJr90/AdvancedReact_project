@@ -45,6 +45,10 @@ const ProductCard = () => {
     if (addCartsList?.length) {
       // only store the state if cards exists and it's length is greater than 0
       localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
+    }
+
+    if (addWishlistsList?.length) {
+      // only store the state if cards exists and it's length is greater than 0
       localStorage.setItem("add-to-wishlist", JSON.stringify(addWishlistsList));
     }
   }, [addCartsList, addWishlistsList]);
