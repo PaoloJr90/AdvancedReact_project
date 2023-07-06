@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import ProductContext from "./ProductContext";
 import { Link } from "react-router-dom";
-
 import NavBar from "./NavBar";
 import Hamburger from "./Hamburger";
 import { FaSistrix, FaRegHeart } from "react-icons/fa";
