@@ -74,88 +74,92 @@ const Cart = () => {
       )}
       <div className="container">
         <div className="wrapper">
-          <h2>Product</h2>
-          <div className="cart-info">
-            <div className="card-products">
-              {addCartsList.map((card, index) => {
-                return (
-                  <div className="cart-product" key={`cart-card-${index}`}>
-                    <button
-                      onClick={() => {
-                        const newList = [...addCartsList];
-                        console.log(addCartsList);
-                        newList.splice(index, 1);
-                        console.log(index);
-                        console.log(newList);
+          {addCartsList.length > 0 && (
+            <>
+              <h2>Product</h2>
+              <div className="cart-info">
+                <div className="card-products">
+                  {addCartsList.map((card, index) => {
+                    return (
+                      <div className="cart-product" key={`cart-card-${index}`}>
+                        <button
+                          onClick={() => {
+                            const newList = [...addCartsList];
+                            console.log(addCartsList);
+                            newList.splice(index, 1);
+                            console.log(index);
+                            console.log(newList);
 
-                        setAddCartsList(newList);
-                      }}
-                    >
-                      X
-                    </button>
-                    <div className="img-block">
-                      <img src={card.image} alt={card.name} />
-                    </div>
-                    <p>{card.model}</p>
-                    <p className="counter">
-                      <button
-                        onClick={() => decrementCount(index)}
-                        style={{
-                          color: counts[index] === 0 ? "gray" : "black",
-                          cursor:
-                            counts[index] === 0 ? "not-allowed" : "pointer",
-                        }}
-                      >
-                        -
-                      </button>
-                      {counts[index] || 1}
-                      <button
-                        onClick={() => incrementCount(index)}
-                        style={{
-                          color: counts[index] === 9 ? "gray" : "black",
-                          cursor:
-                            counts[index] === 9 ? "not-allowed" : "pointer",
-                        }}
-                      >
-                        +
-                      </button>
-                    </p>
-                    <p className="price">{card.price}$</p>
-                  </div>
-                );
-              })}
-            </div>
-            <table className="bill-info">
-              <thead>
-                <tr>
-                  <th>Cart totals</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    Subtotals: <span>135$</span>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Shipping</th>
-                </tr>
-                <tr>
-                  <td>Flat Rate: 15$</td>
-                </tr>
-                <tr>
-                  <td>Where to: Canada, QC</td>
-                </tr>
-              </tbody>
-              <thead>
-                <tr>
-                  <th>
-                    Total <span>135$</span>
-                  </th>
-                </tr>
-              </thead>
-            </table>
-          </div>
+                            setAddCartsList(newList);
+                          }}
+                        >
+                          X
+                        </button>
+                        <div className="img-block">
+                          <img src={card.image} alt={card.name} />
+                        </div>
+                        <p>{card.model}</p>
+                        <p className="counter">
+                          <button
+                            onClick={() => decrementCount(index)}
+                            style={{
+                              color: counts[index] === 0 ? "gray" : "black",
+                              cursor:
+                                counts[index] === 0 ? "not-allowed" : "pointer",
+                            }}
+                          >
+                            -
+                          </button>
+                          {counts[index] || 1}
+                          <button
+                            onClick={() => incrementCount(index)}
+                            style={{
+                              color: counts[index] === 9 ? "gray" : "black",
+                              cursor:
+                                counts[index] === 9 ? "not-allowed" : "pointer",
+                            }}
+                          >
+                            +
+                          </button>
+                        </p>
+                        <p className="price">{card.price}$</p>
+                      </div>
+                    );
+                  })}
+                </div>
+                <table className="bill-info">
+                  <thead>
+                    <tr>
+                      <th>Cart totals</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Subtotals: <span>135$</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Shipping</th>
+                    </tr>
+                    <tr>
+                      <td>Flat Rate: 15$</td>
+                    </tr>
+                    <tr>
+                      <td>Where to: Canada, QC</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th>
+                        Total <span>135$</span>
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>
