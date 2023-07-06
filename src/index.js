@@ -6,27 +6,29 @@ import App from "./App";
 import ProductContext from "./components/ProductContext";
 import { useImmer } from "use-immer";
 
+import { products } from "./common/productsDB";
+
 const Main = () => {
-  const [productsInfo, setProductsInfo] = useImmer({});
+  const [productsInfo, setProductsInfo] = useImmer(products);
   const [addCartsList, setAddCartsList] = useImmer([]);
   const [addWishlistsList, setWishlistList] = useImmer([]);
 
-  useEffect(() => {
-    (async () => {
-      const fetchData = await fetch(`/productsDB.json`, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-        },
-      });
+  // useEffect(() => {
+  //   (async () => {
+  //     const fetchData = await fetch(`/productsDB.json`, {
+  //       method: "GET",
+  //       headers: {
+  //         Accept: "application/json",
+  //       },
+  //     });
 
-      const data = await fetchData.json();
+  //     const data = await fetchData.json();
 
-      setProductsInfo(data);
-    })();
-  }, []);
+  //     setProductsInfo(data);
+  //   })();
+  // }, []);
 
-  console.log("productsInfo", productsInfo);
+  // console.log("productsInfo", productsInfo);
 
   return (
     <React.StrictMode>

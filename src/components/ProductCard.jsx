@@ -28,6 +28,8 @@ const ProductCard = () => {
     }
   }
 
+  console.log("productWithId", productWithId);
+
   const [card, setCard] = useImmer(productWithId);
 
   useEffect(() => {
@@ -49,7 +51,7 @@ const ProductCard = () => {
 
   const addCard = (theCard, cardsList, listState) => {
     for (const card of cardsList) {
-      if (card.id === id) {
+      if (card?.id === id) {
         return;
       }
     }
@@ -64,22 +66,22 @@ const ProductCard = () => {
       <div className="container">
         <div className="card">
           <div className="images">
-            {photosCount.map((photo, index) => {
+            {photosCount?.map((photo, index) => {
               return (
                 <div key={`photo-product-${index}`} className="images-block">
                   <img
-                    src={`/${card.image}`}
-                    alt={`${card.name} ${card.model}`}
+                    src={`/${card?.image}`}
+                    alt={`${card?.name} ${card?.model}`}
                   />
                 </div>
               );
             })}
           </div>
           <div className="description">
-            <h2>{`${card.name} ${card.model}`}</h2>
-            <p className="price">${card.price}</p>
+            <h2>{`${card?.name} ${card?.model}`}</h2>
+            <p className="price">${card?.price}</p>
             <div className="sizes">
-              {card.sizes.map((size, index) => {
+              {card?.sizes?.map((size, index) => {
                 return (
                   <div
                     className={size.inStock ? "size" : "size unavailable"}
@@ -90,7 +92,7 @@ const ProductCard = () => {
                 );
               })}
             </div>
-            <p>{productWithId.about}</p>
+            <p>{productWithId?.about}</p>
             <div className="buttons">
               <button
                 className="btn"

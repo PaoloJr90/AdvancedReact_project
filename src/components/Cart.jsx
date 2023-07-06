@@ -17,15 +17,15 @@ const Cart = () => {
     localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
   }, [addCartsList]);
 
-  const deleteCard = (index) => {
-    const newList = [...addCartsList];
-    console.log(addCartsList);
-    newList.splice(index, 1);
-    console.log(index);
-    console.log(newList);
+  // const deleteCard = (index) => {
+  //   const newList = [...addCartsList];
+  //   console.log(addCartsList);
+  //   newList.splice(index, 1);
+  //   console.log(index);
+  //   console.log(newList);
 
-    setAddCartsList(newList);
-  };
+  //   setAddCartsList(newList);
+  // };
 
   return (
     <section className="cart">
@@ -50,7 +50,19 @@ const Cart = () => {
             return (
               <div key={`cart-card-${index}`}>
                 <p>Card with id: {card.id}</p>
-                <button onClick={() => deleteCard(index)}>X</button>
+                <button
+                  onClick={() => {
+                    const newList = [...addCartsList];
+                    console.log(addCartsList);
+                    newList.splice(index, 1);
+                    console.log(index);
+                    console.log(newList);
+
+                    setAddCartsList(newList);
+                  }}
+                >
+                  X
+                </button>
               </div>
             );
           })}
