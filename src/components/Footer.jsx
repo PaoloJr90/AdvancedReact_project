@@ -2,12 +2,16 @@ import React from "react";
 import { webSiteInfoDB } from "../common/webSiteInfoDB";
 import NavItem from "./NavItem";
 import "./styles/footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { footerNavigation, footerNavigation1 } = webSiteInfoDB;
   return (
     <footer className="container">
-      <p className="first-block">
+      <Link to="/home" className="logo">
+        M<span className="hidden">iralou</span>
+      </Link>
+      <p className="information">
         Information
         {footerNavigation.map((item, index) => {
           return (
@@ -19,7 +23,7 @@ const Footer = () => {
           );
         })}
       </p>
-      <p className="second-block">
+      <p className="quick-links">
         Quick Links
         {footerNavigation1.map((item, index) => {
           return (
@@ -31,6 +35,7 @@ const Footer = () => {
           );
         })}
       </p>
+      <hr></hr>
       <small className="copyright">COPYRIGHT © 2022 MIRALOU</small>
       <small className="rights">ALL RIGHTS RESERVED</small>
     </footer>

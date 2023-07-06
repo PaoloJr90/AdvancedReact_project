@@ -2,19 +2,36 @@ footer.container {
   background-color: black;
   color: white;
   display: block;
-  width: 100%;
-  text-align: center;
+  width: 150%;
   padding: 5px;
+
+  .information {
+    color: white;
+    text-align: center;
+    margin: 5px;
+    justify-content: space-between;
+  }
+
+  .quick-links {
+    color: white;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .copyright {
+    font-weight: bold;
+    float: left;
+  }
+
+  .rights {
+    font-weight: bold;
+    float: right;
+  }
 }
 
-NavItem {
-  color: white;
-}
-
-footer.copyright {
-  text-align: left;
-}
-
-footer.rights {
-  text-align: right;
+hr {
+  //   height: 3px;
+  //   background-color: red;
+  color: red;
+  border-color: red;
 }
