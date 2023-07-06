@@ -9,6 +9,7 @@ import "./styles/cart.scss";
 const Cart = () => {
   const { addCartsList, setAddCartsList } = useContext(ProductContext);
   const [counts, setCounts] = useImmer({});
+  const [totalPrice, setTotalPrice] = useImmer("");
 
   useEffect(() => {
     const retriveProducts = JSON.parse(localStorage.getItem("add-to-cart"));
@@ -19,16 +20,21 @@ const Cart = () => {
     localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
   }, [addCartsList]);
 
+  useEffect(() => {
+    calcTotalPrice();
+  }, [addCartsList, counts]);
+
   const incrementCount = (productId) => {
     if (counts[productId] > 8) {
       return;
     }
+    console.log(counts);
 
     setCounts((draft) => {
       if (draft[productId]) {
         draft[productId] = draft[productId] + 1;
       } else {
-        draft[productId] = 1;
+        draft[productId] = 2;
       }
     });
   };
@@ -43,6 +49,20 @@ const Cart = () => {
         draft[productId] = draft[productId] - 1;
       }
     });
+  };
+
+  const calcTotalPrice = () => {
+    let total = 0;
+
+    addCartsList.forEach((item) => {
+      const productId = item.id;
+      const quantity = counts[productId] || 1;
+      console.log(quantity);
+
+      total += item.price * quantity;
+    });
+
+    setTotalPrice(total);
   };
 
   // const deleteCard = (index) => {
@@ -80,15 +100,15 @@ const Cart = () => {
               <div className="cart-info">
                 <div className="card-products">
                   {addCartsList.map((card, index) => {
+                    const productId = card.id;
+
                     return (
                       <div className="cart-product" key={`cart-card-${index}`}>
                         <button
                           onClick={() => {
                             const newList = [...addCartsList];
-                            console.log(addCartsList);
+
                             newList.splice(index, 1);
-                            console.log(index);
-                            console.log(newList);
 
                             setAddCartsList(newList);
                           }}
@@ -101,22 +121,26 @@ const Cart = () => {
                         <p>{card.model}</p>
                         <p className="counter">
                           <button
-                            onClick={() => decrementCount(index)}
+                            onClick={() => decrementCount(productId)}
                             style={{
-                              color: counts[index] === 0 ? "gray" : "black",
+                              color: counts[productId] === 0 ? "gray" : "black",
                               cursor:
-                                counts[index] === 0 ? "not-allowed" : "pointer",
+                                counts[productId] === 0
+                                  ? "not-allowed"
+                                  : "pointer",
                             }}
                           >
                             -
                           </button>
-                          {counts[index] || 1}
+                          {counts[productId] || 1}
                           <button
-                            onClick={() => incrementCount(index)}
+                            onClick={() => incrementCount(productId)}
                             style={{
-                              color: counts[index] === 9 ? "gray" : "black",
+                              color: counts[productId] === 9 ? "gray" : "black",
                               cursor:
-                                counts[index] === 9 ? "not-allowed" : "pointer",
+                                counts[productId] === 9
+                                  ? "not-allowed"
+                                  : "pointer",
                             }}
                           >
                             +
@@ -136,11 +160,14 @@ const Cart = () => {
                   <tbody>
                     <tr>
                       <td>
-                        Subtotals: <span>135$</span>
+                        Subtotals: <span>{totalPrice}$</span>
                       </td>
                     </tr>
                     <tr>
                       <th>Shipping</th>
+                    </tr>
+                    <tr>
+                      <td>Tax: 20%</td>
                     </tr>
                     <tr>
                       <td>Flat Rate: 15$</td>
@@ -152,7 +179,7 @@ const Cart = () => {
                   <thead>
                     <tr>
                       <th>
-                        Total <span>135$</span>
+                        Total <span>{totalPrice * 1.2 + 15}$</span>
                       </th>
                     </tr>
                   </thead>
