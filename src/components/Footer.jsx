@@ -5,6 +5,7 @@ import "./styles/footer.scss";
 import { Link } from "react-router-dom";
 import { ImFacebook } from "react-icons/im";
 import { BsInstagram, BsVimeo, BsTwitter } from "react-icons/bs";
+import { BiMap, BiPhone, BiMailSend } from "react-icons/bi";
 
 const Footer = () => {
   const { footerNavigation, footerNavigation1, footerNavigation2 } =
@@ -57,12 +58,18 @@ const Footer = () => {
             );
           })}
         </p>
-        <p className="contact-us">CONTACT US</p>
-        <p>
-          {footerNavigation2.address}
-          {footerNavigation2.phone}
-          {footerNavigation2.email}
-        </p>
+        <dt className="contact-us">
+          CONTACT US
+          <dl>{footerNavigation2.adress}</dl>
+          <Link to="https://www.google.ca/maps/place/Ash+Dr,+East+Shannon,+SD+57772,+USA/@43.1778084,-102.3295983,17z/data=!3m1!4b1!4m6!3m5!1s0x877c096bdc93a297:0xc3ec93524ea4b557!8m2!3d43.1778084!4d-102.3270234!16s%2Fg%2F11rxwlbdkx?hl=en&entry=ttu">
+            <BiMap className="icon" />
+          </Link>
+          <dl>{footerNavigation2.phone}</dl>
+          <Link to={`mailto:${footerNavigation2.email}`}>
+            <dl>{footerNavigation2.email}</dl>
+            <BiMailSend className="icon" />
+          </Link>
+        </dt>
       </div>
       <hr></hr>
       <small className="copyright">COPYRIGHT © 2022 MIRALOU</small>
@@ -72,3 +79,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+//

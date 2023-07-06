@@ -45,11 +45,11 @@ export const webSiteInfoDB = {
       link: "/cart",
     },
   ],
-  footerNavigation2: [
-    { adress: "2715 Ash Dr. San Jose, South Dakota 83475" },
-    { phone: "(808) 555-0111" },
-    { email: "miralou.contacts@example.com" },
-  ],
+  footerNavigation2: {
+    adress: "2715 Ash Dr. San Jose, South Dakota 83475",
+    phone: "(808) 555-0111",
+    email: "miralou.contacts@example.com",
+  },
   mainSlider: [
     {
       title: "Choose your shoes with us.",
