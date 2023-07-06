@@ -2,11 +2,13 @@ import React, { useContext, useEffect } from "react";
 import ProductContext from "./ProductContext";
 import SectionHeader from "./SectionHeader";
 import { Link } from "react-router-dom";
+import { useImmer } from "use-immer";
 
 import "./styles/cart.scss";
 
 const Cart = () => {
   const { addCartsList, setAddCartsList } = useContext(ProductContext);
+  const [counts, setCounts] = useImmer({});
 
   useEffect(() => {
     const retriveProducts = JSON.parse(localStorage.getItem("add-to-cart"));
@@ -14,10 +16,34 @@ const Cart = () => {
   }, []);
 
   useEffect(() => {
-    if (addCartsList.length) {
-      localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
-    }
+    localStorage.setItem("add-to-cart", JSON.stringify(addCartsList));
   }, [addCartsList]);
+
+  const incrementCount = (productId) => {
+    if (counts[productId] > 8) {
+      return;
+    }
+
+    setCounts((draft) => {
+      if (draft[productId]) {
+        draft[productId] = draft[productId] + 1;
+      } else {
+        draft[productId] = 1;
+      }
+    });
+  };
+
+  const decrementCount = (productId) => {
+    if (counts[productId] < 1) {
+      return;
+    }
+
+    setCounts((draft) => {
+      if (draft[productId] && draft[productId] > 0) {
+        draft[productId] = draft[productId] - 1;
+      }
+    });
+  };
 
   // const deleteCard = (index) => {
   //   const newList = [...addCartsList];
@@ -48,26 +74,88 @@ const Cart = () => {
       )}
       <div className="container">
         <div className="wrapper">
-          {addCartsList.map((card, index) => {
-            return (
-              <div key={`cart-card-${index}`}>
-                <p>Card with id: {card.id}</p>
-                <button
-                  onClick={() => {
-                    const newList = [...addCartsList];
-                    console.log(addCartsList);
-                    newList.splice(index, 1);
-                    console.log(index);
-                    console.log(newList);
+          <h2>Product</h2>
+          <div className="cart-info">
+            <div className="card-products">
+              {addCartsList.map((card, index) => {
+                return (
+                  <div className="cart-product" key={`cart-card-${index}`}>
+                    <button
+                      onClick={() => {
+                        const newList = [...addCartsList];
+                        console.log(addCartsList);
+                        newList.splice(index, 1);
+                        console.log(index);
+                        console.log(newList);
 
-                    setAddCartsList(newList);
-                  }}
-                >
-                  X
-                </button>
-              </div>
-            );
-          })}
+                        setAddCartsList(newList);
+                      }}
+                    >
+                      X
+                    </button>
+                    <div className="img-block">
+                      <img src={card.image} alt={card.name} />
+                    </div>
+                    <p>{card.model}</p>
+                    <p className="counter">
+                      <button
+                        onClick={() => decrementCount(index)}
+                        style={{
+                          color: counts[index] === 0 ? "gray" : "black",
+                          cursor:
+                            counts[index] === 0 ? "not-allowed" : "pointer",
+                        }}
+                      >
+                        -
+                      </button>
+                      {counts[index] || 1}
+                      <button
+                        onClick={() => incrementCount(index)}
+                        style={{
+                          color: counts[index] === 9 ? "gray" : "black",
+                          cursor:
+                            counts[index] === 9 ? "not-allowed" : "pointer",
+                        }}
+                      >
+                        +
+                      </button>
+                    </p>
+                    <p className="price">{card.price}$</p>
+                  </div>
+                );
+              })}
+            </div>
+            <table className="bill-info">
+              <thead>
+                <tr>
+                  <th>Cart totals</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Subtotals: <span>135$</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Shipping</th>
+                </tr>
+                <tr>
+                  <td>Flat Rate: 15$</td>
+                </tr>
+                <tr>
+                  <td>Where to: Canada, QC</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>
+                    Total <span>135$</span>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
         </div>
       </div>
     </section>
