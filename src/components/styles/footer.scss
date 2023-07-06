@@ -1,9 +1,23 @@
-footer.container {
+.footer {
   background-color: black;
   color: white;
   display: block;
-  width: 150%;
-  padding: 5px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+
+  .logo {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: 640px) {
+    display: block;
+  }
 
   .information {
     color: white;
@@ -13,9 +27,11 @@ footer.container {
   }
 
   .quick-links {
+    display: grid;
     color: white;
     text-align: center;
     margin: 5px;
+    justify-content: space-between;
   }
 
   .copyright {
@@ -30,8 +46,6 @@ footer.container {
 }
 
 hr {
-  //   height: 3px;
-  //   background-color: red;
   color: red;
   border-color: red;
 }
