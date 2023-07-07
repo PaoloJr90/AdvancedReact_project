@@ -9,6 +9,7 @@ import ProductCard from "./components/ProductCard";
 import Cart from "./components/Cart";
 import Wishlist from "./components/Wishlist";
 import Blog from "./components/Blog";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/product-card/:id" element={<ProductCard />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
