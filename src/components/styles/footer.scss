@@ -1,7 +1,6 @@
 .footer {
   background-color: black;
   color: white;
-  display: inline-block;
   width: auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -33,6 +32,7 @@
   }
 
   .info-links-contact {
+    // position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
       color: white;
       font-size: bold;
       text-align: center;
-      margin: 5px;
+      margin: 15px;
       justify-content: space-between;
     }
 
@@ -52,15 +52,18 @@
       display: block;
       font-size: bold;
       text-align: center;
-      margin: 5px;
+      margin: 15px;
       justify-content: space-between;
     }
 
-    .contact-us {
+    .contact-us,
+    .icons {
       display: block;
+      color: white;
       font-size: bold;
+      size: 20px;
       text-align: center;
-      margin: 5px;
+      margin: 15px;
       justify-content: space-between;
     }
   }
