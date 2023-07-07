@@ -41,23 +41,47 @@ const Wishlist = () => {
             </div>
           </div>
         )}
-        {addWishlistsList.map((card, index) => {
-          return (
-            <div key={`cart-card-${index}`}>
-              <p>Card with id: {card.id}</p>
-              <button
-                onClick={() => {
-                  const newList = [...addWishlistsList];
-                  newList.splice(index, 1);
+        <div className="container">
+          <div className="wrapper">
+            {addWishlistsList.length > 0 && (
+              <>
+                <div className="product-header">
+                  <p>product</p>
+                  <p>price</p>
+                  <p>status</p>
+                  <p>action</p>
+                </div>
+                <div>
+                  {addWishlistsList.map((card, index) => {
+                    return (
+                      <div className="product-item" key={`cart-card-${index}`}>
+                        <div className="flex">
+                          <div className="img-block">
+                            <img src={card.image} alt={card.model} />
+                          </div>
+                          <p>{card.model}</p>
+                        </div>
+                        <p className="price">{card.price}$</p>
+                        <p className="stock">In stock</p>
+                        <button
+                          className="btn"
+                          onClick={() => {
+                            const newList = [...addWishlistsList];
+                            newList.splice(index, 1);
 
-                  setWishlistList(newList);
-                }}
-              >
-                X
-              </button>
-            </div>
-          );
-        })}
+                            setWishlistList(newList);
+                          }}
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
       </div>
     </>
   );
