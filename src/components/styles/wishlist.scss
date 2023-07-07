@@ -17,6 +17,26 @@
       text-transform: uppercase;
       color: $ligth-color;
       background-color: $dark-color;
+
+      .price {
+        @media (max-width: 640px) {
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr 100px 200px;
+      }
+
+      @media (max-width: 640px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .status {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
     }
 
     .product-item {
@@ -29,10 +49,18 @@
       text-transform: uppercase;
       font-weight: 600;
 
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr 100px 200px;
+      }
+
+      @media (max-width: 640px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
       .flex {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 20px;
 
         .img-block {
           width: 150px;
@@ -42,6 +70,10 @@
             height: 100%;
             object-fit: cover;
           }
+
+          @media (max-width: 640px) {
+            display: none;
+          }
         }
       }
 
@@ -50,6 +82,10 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        @media (max-width: 640px) {
+          justify-content: center;
+        }
       }
 
       .price {
@@ -58,6 +94,10 @@
 
       .stock {
         color: $success-color;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       .btn {
@@ -66,6 +106,13 @@
         justify-content: center;
         margin: auto auto auto 0;
         text-transform: uppercase;
+
+        @media (max-width: 640px) {
+          font-size: 12px;
+          text-transform: capitalize;
+          text-align: center;
+          padding: 5px 10px;
+        }
       }
     }
   }

@@ -47,8 +47,8 @@ const Wishlist = () => {
               <>
                 <div className="product-header">
                   <p>product</p>
-                  <p>price</p>
-                  <p>status</p>
+                  <p className="price">price</p>
+                  <p className="status">status</p>
                   <p>action</p>
                 </div>
                 <div>
