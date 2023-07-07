@@ -28,8 +28,6 @@ const ProductCard = () => {
     }
   }
 
-  console.log("productWithId", productWithId);
-
   const [card, setCard] = useImmer(productWithId);
 
   useEffect(() => {

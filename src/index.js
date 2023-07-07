@@ -12,6 +12,7 @@ const Main = () => {
   const [productsInfo, setProductsInfo] = useImmer(products);
   const [addCartsList, setAddCartsList] = useImmer([]);
   const [addWishlistsList, setWishlistList] = useImmer([]);
+  const [counts, setCounts] = useImmer({});
 
   // useEffect(() => {
   //   (async () => {
@@ -41,6 +42,8 @@ const Main = () => {
             setAddCartsList,
             addWishlistsList,
             setWishlistList,
+            counts,
+            setCounts,
           }}
         >
           <App />

@@ -1,5 +1,72 @@
+@import "../../utility/variables.scss";
+
 .wishlist {
   .section-header {
     background-image: url("../../images/wishlist-bg.jpg");
+  }
+
+  .wrapper {
+    padding: 80px 0;
+
+    .product-header {
+      display: grid;
+      grid-template-columns: 1fr 100px 100px 200px;
+      gap: 20px;
+      padding: 10px;
+      margin: 0 0 30px 0;
+      text-transform: uppercase;
+      color: $ligth-color;
+      background-color: $dark-color;
+    }
+
+    .product-item {
+      display: grid;
+      grid-template-columns: 1fr 100px 100px 200px;
+      grid-template-rows: 100px;
+      gap: 20px;
+      padding: 0 10px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .img-block {
+          width: 150px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .price,
+      .stock {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .price {
+        color: $accent-color;
+      }
+
+      .stock {
+        color: $success-color;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto auto auto 0;
+        text-transform: uppercase;
+      }
+    }
   }
 }
