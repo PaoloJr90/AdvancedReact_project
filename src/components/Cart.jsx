@@ -29,8 +29,6 @@ const Cart = () => {
       return;
     }
 
-    console.log(counts);
-
     setCounts((draft) => {
       if (draft[productId]) {
         draft[productId] = draft[productId] + 1;

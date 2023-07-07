@@ -17,7 +17,6 @@ function Header() {
   Object.values(counts).forEach((item) => {
     cartCount += item;
   });
-  console.log(cartCount);
 
   useEffect(() => {
     const retriveProducts = JSON.parse(localStorage.getItem("add-to-cart"));
