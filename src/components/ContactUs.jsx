@@ -1,7 +1,14 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
+
+import "./styles/contactUs.scss";
 
 const ContactUs = () => {
-  return <div>This page will contain contact information.</div>;
+  return (
+    <section className="contact-us">
+      <SectionHeader title="Contact us" />
+    </section>
+  );
 };
 
 export default ContactUs;
