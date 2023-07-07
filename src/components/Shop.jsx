@@ -42,10 +42,10 @@ const Shop = () => {
   };
 
   return (
-    <>
+    <section className="shop">
       <SectionHeader title="shop" />
       <div className="container">
-        <div className="shop">
+        <div>
           <div className="filters"></div>
           <div className="products">
             {records.map((product, index) => {
@@ -97,7 +97,7 @@ const Shop = () => {
           </nav>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

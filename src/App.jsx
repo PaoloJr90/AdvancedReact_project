@@ -18,6 +18,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/AdvancedReact_project" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
