@@ -8,10 +8,10 @@ export const webSiteInfoDB = {
       title: "Shop",
       link: "/shop",
     },
-    {
-      title: "Blog",
-      link: "/blog",
-    },
+    // {
+    //   title: "Blog",
+    //   link: "/blog",
+    // },
     {
       title: "Contact Us",
       link: "/contactus",
@@ -146,5 +146,25 @@ export const webSiteInfoDB = {
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis quaerat iusto culpa sed? Nulla et earum ut eveniet recusandae molestiae aliquam animi a nihil aliquid praesentium incidunt, itaque adipisci.",
     image: "/AdvancedReact_project/images/home/about.jpg",
+  },
+  contactUs: [
+    {
+      title: "Miralou #1",
+      location: "2715 Ash Dr. San Jose, South Dakota 83475",
+      phone: "12345678901",
+      mail: "miralou1@gmail.com",
+    },
+    {
+      title: "Miralou #2",
+      location: "2715 Ash2 Dr. San Jose, South Dakota 83475",
+      phone: "12345678902",
+      mail: "miralou2@gmail.com",
+    },
+  ],
+  socialLinks: {
+    facebook: "https://www.facebook.com/",
+    instagram: "https://www.instagram.com/",
+    vimeo: "https://vimeo.com",
+    twitter: "https://twitter.com/",
   },
 };
