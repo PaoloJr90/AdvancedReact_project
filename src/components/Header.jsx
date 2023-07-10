@@ -12,10 +12,10 @@ function Header() {
   const { addWishlistsList, setWishlistList } = useContext(ProductContext);
   const { addCartsList, setAddCartsList } = useContext(ProductContext);
   const { counts, setCounts } = useContext(ProductContext);
-  const { productsInfo,setProductsInfo } = useContext(ProductContext);
-  const [searchData, setSearch] = useState('');
-  const [show, setShow] = useState(false)
-  const {men, women,kids} = productsInfo;
+  const { productsInfo, setProductsInfo } = useContext(ProductContext);
+  const [searchData, setSearch] = useState("");
+  const [show, setShow] = useState(false);
+  const { men, women, kids } = productsInfo;
   const navigate = useNavigate();
 
   let cartCount = 0;
@@ -44,30 +44,36 @@ function Header() {
     }
   }, [addCartsList, addWishlistsList]);
 
-  useEffect(() => {      
-    const searchWords = searchData.replace(' ','');
+  useEffect(() => {
+    const searchWords = searchData.replace(" ", "");
     const searchMen = men?.filter((item) => {
-        const nameModel = (`${item?.name}${item?.model}`).toLowerCase().replaceAll(" ", "");
-        if(nameModel.includes(searchWords)) {
-          return true;
-        }
-        return false;
-    })
+      const nameModel = `${item?.name}${item?.model}`
+        .toLowerCase()
+        .replaceAll(" ", "");
+      if (nameModel.includes(searchWords)) {
+        return true;
+      }
+      return false;
+    });
     const searchWomen = women?.map((item) => {
-      const nameModel = (`${item?.name}${item?.model}`).toLowerCase().replaceAll(" ", "");
-      if(nameModel.includes(searchWords)) {
+      const nameModel = `${item?.name}${item?.model}`
+        .toLowerCase()
+        .replaceAll(" ", "");
+      if (nameModel.includes(searchWords)) {
         return item;
       }
-    })
-  const searchKids = kids?.map((item) => {
-    const nameModel = (`${item?.name}${item?.model}`).toLowerCase().replaceAll(" ", "");
-    if(nameModel.includes(searchWords)) {
-      return item;
-    }
-  })                 
-  setProductsInfo({men:searchMen,women: searchWomen,kids:searchKids})         
-  navigate('/shop');
-}, [searchData])  
+    });
+    const searchKids = kids?.map((item) => {
+      const nameModel = `${item?.name}${item?.model}`
+        .toLowerCase()
+        .replaceAll(" ", "");
+      if (nameModel.includes(searchWords)) {
+        return item;
+      }
+    });
+    setProductsInfo({ men: searchMen, women: searchWomen, kids: searchKids });
+    navigate("/shop");
+  }, [searchData]);
 
   return (
     <header className="header">
@@ -77,23 +83,24 @@ function Header() {
         </Link>
         <NavBar navMenu="dekstop-menu" mobileMenu={mobileMenu} />
         <div className="nav-buttons">
-        <input 
-            type={show? 'text': 'hidden'} 
+          <input
+            type={show ? "text" : "hidden"}
             placeholder="Type to filter..."
-            onChange={(e)=>{
+            onChange={(e) => {
               setSearch(e.target.value.toLowerCase());
-          }}/>          
+            }}
+          />
           <button>
             <FaSistrix
               size={20}
               className="button"
               style={{ color: "#0e0e0e" }}
               onClick={() => {
-                setShow(!show)
-                if(show){
-                  setSearch(searchData || '')
+                setShow(!show);
+                if (show) {
+                  setSearch(searchData || "");
                 }
-              }}              
+              }}
             />
           </button>
           <Link to="/wishlist">
