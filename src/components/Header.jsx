@@ -66,7 +66,7 @@ function Header() {
     }
   })                 
   setProductsInfo({men:searchMen,women: searchWomen,kids:searchKids})         
-  navigate('/home');
+  navigate('/shop');
 }, [searchData])  
 
   return (
@@ -90,6 +90,9 @@ function Header() {
               style={{ color: "#0e0e0e" }}
               onClick={() => {
                 setShow(!show)
+                if(show){
+                  setSearch(searchData || '')
+                }
               }}              
             />
           </button>
