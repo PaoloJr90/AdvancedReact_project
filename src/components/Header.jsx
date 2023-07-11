@@ -15,7 +15,8 @@ function Header() {
   const { productsInfo, setProductsInfo } = useContext(ProductContext);
   const [searchData, setSearch] = useState("");
   const [show, setShow] = useState(false);
-  const { men, women, kids } = productsInfo;
+  const { searchProductsInfo, setSearchProductsInfo } = useContext(ProductContext);
+  const { men, women, kids } = searchProductsInfo;
   const navigate = useNavigate();
 
   let cartCount = 0;
@@ -55,21 +56,23 @@ function Header() {
       }
       return false;
     });
-    const searchWomen = women?.map((item) => {
+    const searchWomen = women?.filter((item) => {
       const nameModel = `${item?.name}${item?.model}`
         .toLowerCase()
         .replaceAll(" ", "");
       if (nameModel.includes(searchWords)) {
-        return item;
+        return true;
       }
+      return false;
     });
-    const searchKids = kids?.map((item) => {
+    const searchKids = kids?.filter((item) => {
       const nameModel = `${item?.name}${item?.model}`
         .toLowerCase()
         .replaceAll(" ", "");
       if (nameModel.includes(searchWords)) {
-        return item;
+        return true;
       }
+      return false;
     });
     setProductsInfo({ men: searchMen, women: searchWomen, kids: searchKids });
     // navigate("/shop");
@@ -97,9 +100,6 @@ function Header() {
               style={{ color: "#0e0e0e" }}
               onClick={() => {
                 setShow(!show);
-                if (show) {
-                  setSearch(searchData || "");
-                }
               }}
             />
           </button>
