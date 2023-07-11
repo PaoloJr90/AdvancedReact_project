@@ -15,7 +15,8 @@ function Header() {
   const { productsInfo, setProductsInfo } = useContext(ProductContext);
   const [searchData, setSearch] = useState("");
   const [show, setShow] = useState(false);
-  const { searchProductsInfo, setSearchProductsInfo } = useContext(ProductContext);
+  const { searchProductsInfo, setSearchProductsInfo } =
+    useContext(ProductContext);
   const { men, women, kids } = searchProductsInfo;
   const navigate = useNavigate();
 
@@ -75,7 +76,7 @@ function Header() {
       return false;
     });
     setProductsInfo({ men: searchMen, women: searchWomen, kids: searchKids });
-    // navigate("/shop");
+    navigate("/shop");
   }, [searchData]);
 
   return (

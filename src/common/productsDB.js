@@ -2,8 +2,8 @@ export const products = {
   men: [
     {
       id: "1m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
+      name: "Nike",
+      model: "Air Nike 1 Mid",
       price: 120,
       sizes: [
         {
@@ -67,9 +67,9 @@ export const products = {
     },
     {
       id: "2m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Puma",
+      model: "Air Puma 1 Mid",
+      price: 90,
       sizes: [
         {
           sizeShoe: 6,
@@ -132,9 +132,9 @@ export const products = {
     },
     {
       id: "3m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Fashoin Sneakers",
+      model: "Air Fashoin Sneakers 1 Mid",
+      price: 135,
       sizes: [
         {
           sizeShoe: 6,
@@ -197,9 +197,9 @@ export const products = {
     },
     {
       id: "4m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Men's Gel-Venture",
+      model: "Air Men's Gel-Venture 1 Mid",
+      price: 96,
       sizes: [
         {
           sizeShoe: 6,
@@ -262,9 +262,9 @@ export const products = {
     },
     {
       id: "5m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Charged Assert",
+      model: "Air Charged Assert 1 Mid",
+      price: 115,
       sizes: [
         {
           sizeShoe: 6,
@@ -327,9 +327,9 @@ export const products = {
     },
     {
       id: "6m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Adidas",
+      model: "Air Adidas 1 Mid",
+      price: 100,
       sizes: [
         {
           sizeShoe: 6,
@@ -392,9 +392,9 @@ export const products = {
     },
     {
       id: "7m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Skechers",
+      model: "Air Skechers 1 Mid",
+      price: 95,
       sizes: [
         {
           sizeShoe: 6,
@@ -457,9 +457,9 @@ export const products = {
     },
     {
       id: "8m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Skechers",
+      model: "Air Skechers 12 Mid",
+      price: 110,
       sizes: [
         {
           sizeShoe: 6,
@@ -523,8 +523,8 @@ export const products = {
     {
       id: "9m",
       name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      model: "Air Jordan 15 Mid",
+      price: 105,
       sizes: [
         {
           sizeShoe: 6,
@@ -587,9 +587,9 @@ export const products = {
     },
     {
       id: "10m",
-      name: "Jordan",
-      model: "Air Jordan 1 Mid",
-      price: 120,
+      name: "Puma",
+      model: "Air Puma",
+      price: 130,
       sizes: [
         {
           sizeShoe: 6,
