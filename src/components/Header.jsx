@@ -47,6 +47,17 @@ function Header() {
   useEffect(() => {
     const searchWords = searchData.replace(" ", "");
     const searchMen = men?.filter((item) => {
+      // const nameModel = `${item?.name}${item?.model}`
+      const nameModel = `${item?.name}`
+        .toLowerCase()
+        .replaceAll(" ", "");
+        console.log('nameModel', nameModel)
+      if (nameModel.includes(searchWords)) {
+        return true;
+      }
+      return false;
+    });
+    const searchWomen = women?.filter((item) => {
       const nameModel = `${item?.name}${item?.model}`
         .toLowerCase()
         .replaceAll(" ", "");
@@ -55,21 +66,14 @@ function Header() {
       }
       return false;
     });
-    const searchWomen = women?.map((item) => {
+    const searchKids = kids?.filter((item) => {
       const nameModel = `${item?.name}${item?.model}`
         .toLowerCase()
         .replaceAll(" ", "");
       if (nameModel.includes(searchWords)) {
-        return item;
+        return true;
       }
-    });
-    const searchKids = kids?.map((item) => {
-      const nameModel = `${item?.name}${item?.model}`
-        .toLowerCase()
-        .replaceAll(" ", "");
-      if (nameModel.includes(searchWords)) {
-        return item;
-      }
+      return false;
     });
     setProductsInfo({ men: searchMen, women: searchWomen, kids: searchKids });
     navigate("/shop");
@@ -97,9 +101,6 @@ function Header() {
               style={{ color: "#0e0e0e" }}
               onClick={() => {
                 setShow(!show);
-                if (show) {
-                  setSearch(searchData || "");
-                }
               }}
             />
           </button>
