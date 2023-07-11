@@ -82,7 +82,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-wrapper container">
-        <Link to="/home" className="logo">
+        <Link to="/" className="logo">
           M<span className="hidden">iralou</span>
         </Link>
         <NavBar navMenu="dekstop-menu" mobileMenu={mobileMenu} />
