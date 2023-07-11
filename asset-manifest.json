@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AdvancedReact_project/static/css/main.edd90b93.css",
-    "main.js": "/AdvancedReact_project/static/js/main.dd06d77f.js",
+    "main.css": "/AdvancedReact_project/static/css/main.9f8c5f0d.css",
+    "main.js": "/AdvancedReact_project/static/js/main.5d68103b.js",
     "static/media/gallery-3.jpg": "/AdvancedReact_project/static/media/gallery-3.ee49a6cb256e1c369c6d.jpg",
     "static/media/gallery-2.jpg": "/AdvancedReact_project/static/media/gallery-2.1876f64b22c6fe76543a.jpg",
     "static/media/shop-header-bg.jpg": "/AdvancedReact_project/static/media/shop-header-bg.ebd87cb3fa7c059477e5.jpg",
@@ -27,11 +27,11 @@
     "static/media/gallery-6.jpg": "/AdvancedReact_project/static/media/gallery-6.cc96ab300d50f5b79165.jpg",
     "static/media/section-header-bg.jpg": "/AdvancedReact_project/static/media/section-header-bg.ec902c0f398ddc4853ea.jpg",
     "index.html": "/AdvancedReact_project/index.html",
-    "main.edd90b93.css.map": "/AdvancedReact_project/static/css/main.edd90b93.css.map",
-    "main.dd06d77f.js.map": "/AdvancedReact_project/static/js/main.dd06d77f.js.map"
+    "main.9f8c5f0d.css.map": "/AdvancedReact_project/static/css/main.9f8c5f0d.css.map",
+    "main.5d68103b.js.map": "/AdvancedReact_project/static/js/main.5d68103b.js.map"
   },
   "entrypoints": [
-    "static/css/main.edd90b93.css",
-    "static/js/main.dd06d77f.js"
+    "static/css/main.9f8c5f0d.css",
+    "static/js/main.5d68103b.js"
   ]
 }
