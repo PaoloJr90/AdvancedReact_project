@@ -95,7 +95,7 @@ export const webSiteInfoDB = {
       title: "We are miralou",
       description:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
-      image: "/AdvancedReact_project/images/about-2.png",
+      image: "/AdvancedReact_project/images/about-2.jpg",
       type: "shoes",
     },
     {
@@ -167,4 +167,38 @@ export const webSiteInfoDB = {
     vimeo: "https://vimeo.com",
     twitter: "https://twitter.com/",
   },
+  team: [
+    {
+      photo: "/AdvancedReact_project/images/team/paolo-photo.jpg",
+      position: "Lead",
+      name: "Paolo Jr A.",
+      // socials: [
+      //   {
+      //     AiFillGithub: "https://github.com/PaoloJr90",
+      //     AiFillLinkedin: "https://www.linkedin.com/in/pjangeloni/",
+      //   },
+      // ],
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam qui optio, ad amet magni aut fuga ipsam, reprehenderit est, quibusdam neque voluptatem nam ipsum sequi hic tenetur assumenda esse quis?",
+    },
+    {
+      photo: "/AdvancedReact_project/images/team/shella-photo.jpg",
+      position: "Developer",
+      name: "Ke Qi",
+      // socials: ["https://github.com/Shellaqi"],
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam qui optio, ad amet magni aut fuga ipsam, reprehenderit est, quibusdam neque voluptatem nam ipsum sequi hic tenetur assumenda esse quis?",
+    },
+    {
+      photo: "/AdvancedReact_project/images/team/yevhen-photo.jpg",
+      position: "Developer",
+      name: "Yevhen Khreptun",
+      // socials: [
+      //   "https://github.com/khreptunyevhen",
+      //   "https://www.linkedin.com/in/yevhen-khreptun-aa86b4267/",
+      // ],
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam qui optio, ad amet magni aut fuga ipsam, reprehenderit est, quibusdam neque voluptatem nam ipsum sequi hic tenetur assumenda esse quis?",
+    },
+  ],
 };

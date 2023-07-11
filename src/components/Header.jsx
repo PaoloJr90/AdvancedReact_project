@@ -72,7 +72,7 @@ function Header() {
       }
     });
     setProductsInfo({ men: searchMen, women: searchWomen, kids: searchKids });
-    navigate("/shop");
+    // navigate("/shop");
   }, [searchData]);
 
   return (
