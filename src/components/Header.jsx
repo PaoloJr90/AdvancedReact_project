@@ -15,7 +15,8 @@ function Header() {
   const { productsInfo, setProductsInfo } = useContext(ProductContext);
   const [searchData, setSearch] = useState("");
   const [show, setShow] = useState(false);
-  const { men, women, kids } = productsInfo;
+  const { searchProductsInfo, setSearchProductsInfo } = useContext(ProductContext);
+  const { men, women, kids } = searchProductsInfo;
   const navigate = useNavigate();
 
   let cartCount = 0;
@@ -47,11 +48,9 @@ function Header() {
   useEffect(() => {
     const searchWords = searchData.replace(" ", "");
     const searchMen = men?.filter((item) => {
-      // const nameModel = `${item?.name}${item?.model}`
-      const nameModel = `${item?.name}`
+      const nameModel = `${item?.name}${item?.model}`
         .toLowerCase()
         .replaceAll(" ", "");
-        console.log('nameModel', nameModel)
       if (nameModel.includes(searchWords)) {
         return true;
       }
